@@ -13,6 +13,8 @@ while True :
                 counter_index = alpha.index(char)
                 f_index = int(counter_index + num) %len(alpha)
                 letter += alpha[f_index]
+            else :
+                letter += char
         print(letter)
         end = input("Type 'yes' if you want to go again. Otherwise type 'no'. : ").lower()
     elif choice == "decode":
@@ -23,6 +25,8 @@ while True :
                 counter_index = alpha.index(char)
                 f_index = int(counter_index - num) % len(alpha)
                 letter += alpha[f_index]
+            else :
+                letter += char
         print(letter)
         end = input("Type 'yes' if you want to go again. Otherwise type 'no'. : ").lower()
     else :
